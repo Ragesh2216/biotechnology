@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lab Instruments & Devices — Stackly Biotechnology</title>
+  <meta name="description" content="Stackly's range of precision biotechnology instruments — DNA sequencers, PCR systems, biosensors, cell culture systems, and lab automation." />
+  <link rel="stylesheet" href="css/style.css" /><link rel="stylesheet" href="css/responsive.css" />
+</head>
+<body>
+<div id="preloader"><div class="preloader-inner"><div class="preloader-logo">⬡ Stackly</div><div class="preloader-bar"><div class="preloader-bar-fill"></div></div></div></div>
+
+<nav class="navbar">
+  <a href="index.html" class="navbar-brand"><div class="brand-icon">⬡</div>Stackly</a>
+  <div class="navbar-links">
+    <a href="index.html">Home</a><a href="about.html">About</a>
+    <a href="devices.html" class="active">Devices</a><a href="services.html">Services</a>
+    <a href="innovations.html">Innovations</a><a href="contact.html">Contact</a>
+    <div class="nav-dropdown" id="navDropdown">
+      <button class="nav-dropdown-trigger" id="dropdownTrigger">Login <span class="caret">▼</span></button>
+      <div class="nav-dropdown-menu">
+        <a href="login.html?type=admin"><span class="menu-icon">🛡️</span> Admin</a>
+        <a href="login.html?type=customer"><span class="menu-icon">👤</span> Customer</a>
+      </div>
+    </div>
+  </div>
+  <button class="navbar-mobile-toggle" id="mobileToggle"><span></span><span></span><span></span></button>
+</nav>
+<div class="navbar-mobile" id="mobileNav">
+  <a href="index.html">Home</a><a href="about.html">About</a><a href="devices.html">Devices</a>
+  <a href="services.html">Services</a><a href="innovations.html">Innovations</a><a href="contact.html">Contact</a>
+  <div class="mobile-access-section">
+    <div class="mobile-access-label">Login</div>
+    <a href="login.html?type=admin">🛡️ Admin</a>
+    <a href="login.html?type=customer">👤 Customer</a>
+  </div>
+</div>
+
+<section class="page-hero">
+  <div class="page-hero-content">
+    <div class="section-tag" style="margin:0 auto 20px;">Biotechnology Instruments</div>
+    <h1 class="section-title">Precision <span>Lab Instruments</span> for Biotech Research</h1>
+    <p class="section-subtitle" style="margin:0 auto;">From DNA sequencers to smart bioreactors — Stackly instruments combine precision hardware with edge-AI for next-generation biotechnology workflows.</p>
+  </div>
+</section>
+
+<section class="section filterable-section" id="products">
+  <div class="container">
+    <div class="text-center" style="margin-bottom:40px;">
+      <div class="filter-btn-group" style="display:flex;gap:10px;justify-content:center;flex-wrap:wrap;">
+        <button class="btn btn-ghost btn-sm filter-btn active" data-filter="all" style="background:var(--gradient-primary);color:#fff;border:none;">All Instruments</button>
+        <button class="btn btn-ghost btn-sm filter-btn" data-filter="sequencing">Sequencing</button>
+        <button class="btn btn-ghost btn-sm filter-btn" data-filter="pcr">PCR Systems</button>
+        <button class="btn btn-ghost btn-sm filter-btn" data-filter="cell">Cell Biology</button>
+        <button class="btn btn-ghost btn-sm filter-btn" data-filter="biosensor">Biosensors</button>
+      </div>
+    </div>
+
+    <div class="grid-3">
+      <div class="card reveal" data-category="sequencing">
+        <div style="height:180px;background:linear-gradient(135deg,rgba(0,212,170,0.1),rgba(124,58,237,0.1));border-radius:var(--radius-sm);display:flex;align-items:center;justify-content:center;font-size:4rem;margin-bottom:20px;border:1px solid var(--border);">🧬</div>
+        <div class="badge badge-primary" style="margin-bottom:12px;">Sequencing</div>
+        <h3 class="card-title">NanoPore WGS System</h3>
+        <p class="card-text">Third-generation nanopore DNA sequencer. Whole-genome in 4 hours, read lengths up to 2Mb. Built-in basecalling AI with 99.9% accuracy.</p>
+        <div style="margin-top:20px;padding-top:16px;border-top:1px solid var(--border);display:flex;justify-content:space-between;align-items:center;">
+          <span style="font-size:1.2rem;font-weight:700;color:var(--primary);font-family:var(--font-heading);">₹3,50,000</span>
+          <a href="login.html?type=customer" class="btn btn-primary btn-sm">Get Quote</a>
+        </div>
+      </div>
+
+      <div class="card reveal reveal-delay-1" data-category="pcr">
+        <div style="height:180px;background:linear-gradient(135deg,rgba(124,58,237,0.1),rgba(6,182,212,0.1));border-radius:var(--radius-sm);display:flex;align-items:center;justify-content:center;font-size:4rem;margin-bottom:20px;border:1px solid var(--border);">🔬</div>
+        <div class="badge badge-purple" style="margin-bottom:12px;">PCR Systems</div>
+        <h3 class="card-title">ddPCR Digital Platform</h3>
+        <p class="card-text">Droplet digital PCR with absolute quantification, rare mutation detection down to 0.01%, and multiplexing up to 5 targets per well. MIQE compliant.</p>
+        <div style="margin-top:20px;padding-top:16px;border-top:1px solid var(--border);display:flex;justify-content:space-between;align-items:center;">
+          <span style="font-size:1.2rem;font-weight:700;color:var(--secondary-light);font-family:var(--font-heading);">₹1,80,000</span>
+          <a href="login.html?type=customer" class="btn btn-primary btn-sm">Request Demo</a>
+        </div>
+      </div>
+
+      <div class="card reveal reveal-delay-2" data-category="cell">
+        <div style="height:180px;background:linear-gradient(135deg,rgba(245,158,11,0.1),rgba(0,212,170,0.1));border-radius:var(--radius-sm);display:flex;align-items:center;justify-content:center;font-size:4rem;margin-bottom:20px;border:1px solid var(--border);">🧫</div>
+        <div class="badge badge-yellow" style="margin-bottom:12px;">Cell Biology</div>
+        <h3 class="card-title">Smart Bioreactor SR-5L</h3>
+        <p class="card-text">5-litre automated bioreactor with AI-driven pH, DO, and temperature control for mammalian cell culture and microbial fermentation. 21 CFR Part 11 compliant.</p>
+        <div style="margin-top:20px;padding-top:16px;border-top:1px solid var(--border);display:flex;justify-content:space-between;align-items:center;">
+          <span style="font-size:1.2rem;font-weight:700;color:var(--accent2);font-family:var(--font-heading);">₹4,20,000</span>
+          <a href="login.html?type=customer" class="btn btn-primary btn-sm">Order Now</a>
+        </div>
+      </div>
+
+      <div class="card reveal" data-category="biosensor">
+        <div style="height:180px;background:linear-gradient(135deg,rgba(6,182,212,0.1),rgba(0,212,170,0.1));border-radius:var(--radius-sm);display:flex;align-items:center;justify-content:center;font-size:4rem;margin-bottom:20px;border:1px solid var(--border);">📡</div>
+        <div class="badge badge-blue" style="margin-bottom:12px;">Biosensor</div>
+        <h3 class="card-title">GrapheneSense Electrochemical Biosensor</h3>
+        <p class="card-text">Graphene-based electrochemical biosensor for real-time detection of proteins, nucleic acids, and small molecules at femtomolar sensitivity. Lab-on-chip format.</p>
+        <div style="margin-top:20px;padding-top:16px;border-top:1px solid var(--border);display:flex;justify-content:space-between;align-items:center;">
+          <span style="font-size:1.2rem;font-weight:700;color:var(--accent);font-family:var(--font-heading);">₹85,000</span>
+          <a href="login.html?type=customer" class="btn btn-primary btn-sm">Get Quote</a>
+        </div>
+      </div>
+
+      <div class="card reveal reveal-delay-1" data-category="pcr">
+        <div style="height:180px;background:linear-gradient(135deg,rgba(0,212,170,0.08),rgba(245,158,11,0.1));border-radius:var(--radius-sm);display:flex;align-items:center;justify-content:center;font-size:4rem;margin-bottom:20px;border:1px solid var(--border);">⚡</div>
+        <div class="badge badge-primary" style="margin-bottom:12px;">PCR Systems</div>
+        <h3 class="card-title">LAMP RapidID System</h3>
+        <p class="card-text">Loop-mediated isothermal amplification (LAMP) system for rapid pathogen identification in 25 minutes. Ideal for point-of-care infectious disease diagnostics.</p>
+        <div style="margin-top:20px;padding-top:16px;border-top:1px solid var(--border);display:flex;justify-content:space-between;align-items:center;">
+          <span style="font-size:1.2rem;font-weight:700;color:var(--primary);font-family:var(--font-heading);">₹65,000</span>
+          <a href="login.html?type=customer" class="btn btn-primary btn-sm">Order Now</a>
+        </div>
+      </div>
+
+      <div class="card reveal reveal-delay-2" data-category="cell">
+        <div style="height:180px;background:linear-gradient(135deg,rgba(124,58,237,0.08),rgba(6,182,212,0.1));border-radius:var(--radius-sm);display:flex;align-items:center;justify-content:center;font-size:4rem;margin-bottom:20px;border:1px solid var(--border);">🔭</div>
+        <div class="badge badge-purple" style="margin-bottom:12px;">Cell Biology</div>
+        <h3 class="card-title">CellImager AI Microscopy</h3>
+        <p class="card-text">High-content automated confocal microscope with AI-powered cell segmentation, phenotyping, and apoptosis/mitosis scoring for HTS screening assays.</p>
+        <div style="margin-top:20px;padding-top:16px;border-top:1px solid var(--border);display:flex;justify-content:space-between;align-items:center;">
+          <span style="font-size:1.2rem;font-weight:700;color:var(--secondary-light);font-family:var(--font-heading);">₹8,50,000</span>
+          <a href="login.html?type=customer" class="btn btn-primary btn-sm">Request Demo</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" style="background:var(--bg-card);border-top:1px solid var(--border);border-bottom:1px solid var(--border);">
+  <div class="container">
+    <div class="text-center reveal">
+      <div class="section-tag">Engineering</div>
+      <h2 class="section-title">Built on <span>Biotechnology Standards</span></h2>
+    </div>
+    <div class="grid-4" style="margin-top:48px;">
+      <div class="card reveal text-center"><div style="font-size:2rem;margin-bottom:12px;">🏅</div><h4 class="card-title">GLP Certified</h4><p class="card-text">All instruments validated under Good Laboratory Practice guidelines for regulatory submissions.</p></div>
+      <div class="card reveal reveal-delay-1 text-center"><div style="font-size:2rem;margin-bottom:12px;">🔬</div><h4 class="card-title">ISO 13485</h4><p class="card-text">Medical device quality management system certified for in-vitro diagnostic instruments.</p></div>
+      <div class="card reveal reveal-delay-2 text-center"><div style="font-size:2rem;margin-bottom:12px;">⚙️</div><h4 class="card-title">21 CFR Part 11</h4><p class="card-text">Electronic records and signatures compliance for GxP data integrity requirements.</p></div>
+      <div class="card reveal reveal-delay-3 text-center"><div style="font-size:2rem;margin-bottom:12px;">🌐</div><h4 class="card-title">Cloud Connected</h4><p class="card-text">All instruments stream data to Stackly Cloud LIMS in real-time via secure encrypted channels.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="section-sm"><div class="container"><div class="cta-banner reveal text-center">
+  <h2 class="section-title">Equip Your <span>Biotechnology Lab</span></h2>
+  <p class="section-subtitle" style="margin:0 auto 32px;">Get personalised instrument recommendations from our applications scientists.</p>
+  <div style="display:flex;gap:16px;justify-content:center;flex-wrap:wrap;">
+    <a href="contact.html" class="btn btn-primary btn-lg">Talk to a Scientist</a>
+    <a href="services.html" class="btn btn-outline btn-lg">View Services</a>
+  </div>
+</div></div></section>
+
+<footer><div class="container-wide">
+  <div class="footer-grid">
+    <div><div class="footer-brand">⬡ Stackly</div><p class="footer-desc">Advancing biotechnology through genomics, molecular diagnostics, and AI-powered life sciences.</p><p style="font-size:.82rem;color:var(--text-muted);margin-bottom:16px;">📍 Stackly Salem, India</p><div class="footer-socials"><div class="footer-social-btn">𝕏</div><div class="footer-social-btn">in</div><div class="footer-social-btn">⌥</div></div></div>
+    <div><div class="footer-col-title">Biotech</div><div class="footer-links"><a href="devices.html">Lab Instruments</a><a href="services.html">Services</a><a href="innovations.html">R&D</a></div></div>
+    <div><div class="footer-col-title">Company</div><div class="footer-links"><a href="about.html">About</a><a href="contact.html">Contact</a><a href="dashboard.html">Dashboard</a></div></div>
+    <div><div class="footer-col-title">Legal</div><div class="footer-links"><a href="404.html">Privacy</a><a href="404.html">Terms</a><a href="404.html">GLP</a></div></div>
+  </div>
+  <div class="footer-bottom"><span>© 2025 Stackly Biotechnology. All rights reserved.</span><span>📍 Stackly Salem, India</span></div>
+</div></footer>
+<button id="scrollTop">↑</button>
+<script src="js/main.js"></script>
+<script>
+  const dt=document.getElementById('dropdownTrigger'),nd=document.getElementById('navDropdown');
+  if(dt){dt.addEventListener('click',e=>{e.stopPropagation();nd.classList.toggle('open')});document.addEventListener('click',()=>nd.classList.remove('open'));}
+  document.querySelectorAll('.filter-btn').forEach(btn=>{btn.addEventListener('click',()=>{document.querySelectorAll('.filter-btn').forEach(b=>{b.style.background='';b.style.color='';b.style.border='';});btn.style.background='var(--gradient-primary)';btn.style.color='#fff';btn.style.border='none';});});
+</script>
+</body></html>

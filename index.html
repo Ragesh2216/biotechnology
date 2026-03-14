@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Stackly — Biotechnology Innovation Platform</title>
+  <meta name="description" content="Stackly delivers cutting-edge biotechnology solutions for molecular diagnostics, genomics, drug discovery, and clinical life sciences research." />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+</head>
+<body>
+
+<!-- Preloader -->
+<div id="preloader">
+  <div class="preloader-inner">
+    <div class="preloader-logo">⬡ Stackly</div>
+    <div class="preloader-bar"><div class="preloader-bar-fill"></div></div>
+  </div>
+</div>
+
+<!-- Navbar -->
+<nav class="navbar">
+  <a href="index.html" class="navbar-brand">
+    <div class="brand-icon">⬡</div>Stackly
+  </a>
+  <div class="navbar-links">
+    <a href="index.html" class="active">Home</a>
+    <a href="about.html">About</a>
+    <a href="devices.html">Devices</a>
+    <a href="services.html">Services</a>
+    <a href="innovations.html">Innovations</a>
+    <a href="contact.html">Contact</a>
+    <!-- Access Dropdown -->
+    <div class="nav-dropdown" id="navDropdown">
+      <button class="nav-dropdown-trigger" id="dropdownTrigger">
+        Access Portal <span class="caret">▼</span>
+      </button>
+      <div class="nav-dropdown-menu">
+        <a href="dashboard.html"><span class="menu-icon">📊</span> Dashboard</a>
+        <div class="menu-divider"></div>
+        <a href="login.html?type=admission"><span class="menu-icon">🏥</span> Admission</a>
+        <a href="login.html?type=customer"><span class="menu-icon">👤</span> Customer</a>
+      </div>
+    </div>
+  </div>
+  <button class="navbar-mobile-toggle" id="mobileToggle" aria-label="Toggle menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- Mobile Nav -->
+<div class="navbar-mobile" id="mobileNav">
+  <a href="index.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="devices.html">Devices</a>
+  <a href="services.html">Services</a>
+  <a href="innovations.html">Innovations</a>
+  <a href="contact.html">Contact</a>
+  <div class="mobile-access-section">
+    <div class="mobile-access-label">Login</div>
+    <a href="login.html?type=admin">🛡️ Admin</a>
+    <a href="login.html?type=customer">👤 Customer</a>
+  </div>
+</div>
+
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="hero-bg-grid"></div>
+  <div class="hero-orb hero-orb-1"></div>
+  <div class="hero-orb hero-orb-2"></div>
+
+  <div class="hero-content">
+    <div class="hero-label">
+      <span class="dot"></span>
+      Biotechnology Solutions · Salem, India
+    </div>
+    <h1 class="hero-title">
+      Advancing <span class="gradient-text">Biotechnology</span><br>for a Healthier World
+    </h1>
+    <p class="hero-desc">
+      Stackly pioneers molecular diagnostics, genomic sequencing, CRISPR gene editing, and biosensor technologies — transforming biological research into life-saving clinical applications.
+    </p>
+    <div class="hero-actions">
+      <a href="devices.html" class="btn btn-primary btn-lg">Explore Biotech Devices ↗</a>
+      <a href="about.html" class="btn btn-outline btn-lg">Our Research</a>
+    </div>
+  </div>
+
+  <!-- Hero visual -->
+  <div class="hero-visual" style="background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius-lg);padding:24px;box-shadow:var(--shadow-glow);">
+    <div style="display:flex;align-items:center;gap:10px;margin-bottom:20px;">
+      <div style="width:10px;height:10px;border-radius:50%;background:#ef4444;"></div>
+      <div style="width:10px;height:10px;border-radius:50%;background:var(--accent2);"></div>
+      <div style="width:10px;height:10px;border-radius:50%;background:#22c55e;"></div>
+      <span style="font-size:0.8rem;color:var(--text-muted);margin-left:8px;">Biotech Lab Monitor</span>
+    </div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:16px;">
+      <div style="background:var(--bg-glass2);border:1px solid var(--border);border-radius:var(--radius-sm);padding:14px;">
+        <div style="font-size:0.72rem;color:var(--text-muted);text-transform:uppercase;letter-spacing:.08em;margin-bottom:6px;">DNA Purity (A260/280)</div>
+        <div style="font-size:1.6rem;font-weight:700;color:var(--primary);font-family:var(--font-heading);">1.89</div>
+        <div style="font-size:0.72rem;color:#22c55e;">✓ High Purity</div>
+      </div>
+      <div style="background:var(--bg-glass2);border:1px solid var(--border);border-radius:var(--radius-sm);padding:14px;">
+        <div style="font-size:0.72rem;color:var(--text-muted);text-transform:uppercase;letter-spacing:.08em;margin-bottom:6px;">Cell Viability</div>
+        <div style="font-size:1.6rem;font-weight:700;color:var(--secondary-light);font-family:var(--font-heading);">96.4<span style="font-size:.9rem;color:var(--text-muted)"> %</span></div>
+        <div style="font-size:0.72rem;color:#22c55e;">✓ Excellent</div>
+      </div>
+      <div style="background:var(--bg-glass2);border:1px solid var(--border);border-radius:var(--radius-sm);padding:14px;">
+        <div style="font-size:0.72rem;color:var(--text-muted);text-transform:uppercase;letter-spacing:.08em;margin-bottom:6px;">PCR Efficiency</div>
+        <div style="font-size:1.6rem;font-weight:700;color:var(--accent2);font-family:var(--font-heading);">99.2<span style="font-size:.9rem;color:var(--text-muted)"> %</span></div>
+        <div style="font-size:0.72rem;color:#22c55e;">✓ Optimal</div>
+      </div>
+      <div style="background:var(--bg-glass2);border:1px solid var(--border);border-radius:var(--radius-sm);padding:14px;">
+        <div style="font-size:0.72rem;color:var(--text-muted);text-transform:uppercase;letter-spacing:.08em;margin-bottom:6px;">Culture pH</div>
+        <div style="font-size:1.6rem;font-weight:700;color:var(--accent);font-family:var(--font-heading);">7.42</div>
+        <div style="font-size:0.72rem;color:#22c55e;">✓ Physiological</div>
+      </div>
+    </div>
+    <div style="height:80px;background:var(--bg-glass2);border:1px solid var(--border);border-radius:var(--radius-sm);padding:10px;display:flex;align-items:flex-end;gap:4px;overflow:hidden;">
+      <div style="font-size:0.7rem;color:var(--text-muted);align-self:flex-start;white-space:nowrap;">Gene Expression ●</div>
+      <div style="flex:1;display:flex;align-items:flex-end;gap:3px;height:48px;">
+        <div style="flex:1;height:20%;background:var(--primary);opacity:.5;border-radius:2px 2px 0 0;"></div>
+        <div style="flex:1;height:45%;background:var(--primary);opacity:.6;border-radius:2px 2px 0 0;"></div>
+        <div style="flex:1;height:100%;background:var(--primary);border-radius:2px 2px 0 0;"></div>
+        <div style="flex:1;height:30%;background:var(--primary);opacity:.6;border-radius:2px 2px 0 0;"></div>
+        <div style="flex:1;height:15%;background:var(--primary);opacity:.4;border-radius:2px 2px 0 0;"></div>
+        <div style="flex:1;height:55%;background:var(--primary);opacity:.7;border-radius:2px 2px 0 0;"></div>
+        <div style="flex:1;height:80%;background:var(--primary);opacity:.9;border-radius:2px 2px 0 0;"></div>
+        <div style="flex:1;height:35%;background:var(--primary);opacity:.6;border-radius:2px 2px 0 0;"></div>
+        <div style="flex:1;height:20%;background:var(--primary);opacity:.5;border-radius:2px 2px 0 0;"></div>
+        <div style="flex:1;height:60%;background:var(--primary);opacity:.8;border-radius:2px 2px 0 0;"></div>
+        <div style="flex:1;height:100%;background:var(--primary);border-radius:2px 2px 0 0;"></div>
+        <div style="flex:1;height:25%;background:var(--primary);opacity:.5;border-radius:2px 2px 0 0;"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TICKER -->
+<div class="ticker-wrap">
+  <div class="ticker-label">Biotech News</div>
+  <div style="overflow:hidden;flex:1;">
+    <div class="ticker-track">
+      <span class="ticker-item">CRISPR-Cas9 achieves 99.7% on-target gene editing precision in vivo</span>
+      <span class="ticker-item">Stackly's nanopore sequencer completes whole-genome in 4 hours</span>
+      <span class="ticker-item">mRNA Lipid Nanoparticle delivery system achieves 95% transfection efficiency</span>
+      <span class="ticker-item">Next-gen biosensor detects cancer biomarkers at femtomolar sensitivity</span>
+      <span class="ticker-item">Synthetic biology platform engineers insulin-producing cells for T1 diabetes</span>
+      <span class="ticker-item">Monoclonal antibody production yield improved 3× via AI fermentation control</span>
+      <span class="ticker-item">CRISPR-Cas9 achieves 99.7% on-target gene editing precision in vivo</span>
+      <span class="ticker-item">Stackly's nanopore sequencer completes whole-genome in 4 hours</span>
+      <span class="ticker-item">mRNA Lipid Nanoparticle delivery system achieves 95% transfection efficiency</span>
+      <span class="ticker-item">Next-gen biosensor detects cancer biomarkers at femtomolar sensitivity</span>
+      <span class="ticker-item">Synthetic biology platform engineers insulin-producing cells for T1 diabetes</span>
+      <span class="ticker-item">Monoclonal antibody production yield improved 3× via AI fermentation control</span>
+    </div>
+  </div>
+</div>
+
+<!-- STATS -->
+<section class="section-sm" style="background:var(--bg-card);border-bottom:1px solid var(--border);">
+  <div class="container">
+    <div class="grid-4">
+      <div class="stat-block reveal">
+        <span class="stat-value" data-target="99" data-suffix="%">0%</span>
+        <span class="stat-label">Sequencing Accuracy</span>
+      </div>
+      <div class="stat-block reveal reveal-delay-1">
+        <span class="stat-value" data-target="2500" data-suffix="+">0+</span>
+        <span class="stat-label">Genomic Samples Processed</span>
+      </div>
+      <div class="stat-block reveal reveal-delay-2">
+        <span class="stat-value" data-target="120" data-suffix="+">0+</span>
+        <span class="stat-label">Research Partners</span>
+      </div>
+      <div class="stat-block reveal reveal-delay-3">
+        <span class="stat-value" data-target="15" data-suffix=" Patents">0</span>
+        <span class="stat-label">Biotech Patents</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FEATURES -->
+<section class="section" id="features">
+  <div class="container">
+    <div class="text-center reveal">
+      <div class="section-tag">Biotechnology Platform</div>
+      <h2 class="section-title">Core <span>Biotechnology</span> Capabilities</h2>
+      <p class="section-subtitle">End-to-end biotechnology infrastructure — from molecular biology tools to AI-powered genomic analytics and clinical applications.</p>
+    </div>
+
+    <div class="grid-3" style="margin-top:56px;">
+      <div class="feature-card reveal">
+        <div class="card-icon">🧬</div>
+        <div class="feature-card-num">01</div>
+        <h3 class="card-title">Genomic Sequencing</h3>
+        <p class="card-text">Whole-genome and whole-exome sequencing with Oxford Nanopore and Illumina-compatible platforms. Variant calling pipeline delivers results in 4 hours.</p>
+      </div>
+      <div class="feature-card reveal reveal-delay-1">
+        <div class="card-icon">✂️</div>
+        <div class="feature-card-num">02</div>
+        <h3 class="card-title">CRISPR Gene Editing</h3>
+        <p class="card-text">AI-guided CRISPR-Cas9 and base editing with automated guide RNA design, off-target prediction, and delivery optimisation for therapeutic development.</p>
+      </div>
+      <div class="feature-card reveal reveal-delay-2">
+        <div class="card-icon">🔬</div>
+        <div class="feature-card-num">03</div>
+        <h3 class="card-title">Molecular Diagnostics</h3>
+        <p class="card-text">qPCR, ddPCR, and LAMP-based diagnostic assays with AI-enhanced interpretation for infectious disease, oncology, and genetic disorders.</p>
+      </div>
+      <div class="feature-card reveal reveal-delay-1">
+        <div class="card-icon">💊</div>
+        <div class="feature-card-num">04</div>
+        <h3 class="card-title">Drug Discovery AI</h3>
+        <p class="card-text">Machine learning-driven molecular docking, ADMET prediction, and lead optimisation — reducing drug discovery timelines from years to months.</p>
+      </div>
+      <div class="feature-card reveal reveal-delay-2">
+        <div class="card-icon">🧪</div>
+        <div class="feature-card-num">05</div>
+        <h3 class="card-title">Bioreactor & Fermentation</h3>
+        <p class="card-text">Smart bioreactor control systems for monoclonal antibody production, recombinant protein expression, and cell culture bioprocessing.</p>
+      </div>
+      <div class="feature-card reveal reveal-delay-3">
+        <div class="card-icon">🛡️</div>
+        <div class="feature-card-num">06</div>
+        <h3 class="card-title">Biosafety & Compliance</h3>
+        <p class="card-text">BSL-2 compliant lab workflow management, GLP-certified protocols, and automated regulatory documentation for IND/NDA submissions.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider-gradient"></div>
+
+<!-- HOW IT WORKS -->
+<section class="section" id="how-it-works">
+  <div class="container">
+    <div class="grid-2" style="gap:64px;">
+      <div class="reveal">
+        <div class="section-tag">Research Pipeline</div>
+        <h2 class="section-title">From <span>Molecule to Medicine</span></h2>
+        <p class="section-subtitle">Our integrated biotechnology pipeline accelerates every stage from target discovery to clinical candidate selection.</p>
+
+        <div style="margin-top:40px;display:flex;flex-direction:column;gap:28px;">
+          <div style="display:flex;gap:20px;align-items:flex-start;">
+            <div class="step-number">1</div>
+            <div>
+              <h4 style="font-family:var(--font-heading);font-size:1rem;font-weight:600;margin-bottom:6px;">Target Identification &amp; Validation</h4>
+              <p style="font-size:0.9rem;color:var(--text-secondary);line-height:1.7;">Multiomics analysis (genomics, proteomics, metabolomics) identifies disease-relevant molecular targets with functional validation via CRISPR knockouts.</p>
+            </div>
+          </div>
+          <div style="display:flex;gap:20px;align-items:flex-start;">
+            <div class="step-number">2</div>
+            <div>
+              <h4 style="font-family:var(--font-heading);font-size:1rem;font-weight:600;margin-bottom:6px;">Hit-to-Lead Optimisation</h4>
+              <p style="font-size:0.9rem;color:var(--text-secondary);line-height:1.7;">AI-powered virtual screening of 10M+ compound libraries followed by automated HTS assays and SAR analysis to identify lead candidates.</p>
+            </div>
+          </div>
+          <div style="display:flex;gap:20px;align-items:flex-start;">
+            <div class="step-number">3</div>
+            <div>
+              <h4 style="font-family:var(--font-heading);font-size:1rem;font-weight:600;margin-bottom:6px;">Preclinical &amp; IND Preparation</h4>
+              <p style="font-size:0.9rem;color:var(--text-secondary);line-height:1.7;">Automated toxicology profiling, PK/PD modelling, and regulatory dossier preparation, reducing IND filing timelines by 40%.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="reveal reveal-delay-2" style="background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius-lg);padding:32px;">
+        <h4 style="font-family:var(--font-heading);font-size:1rem;font-weight:600;margin-bottom:20px;color:var(--text-secondary);">Biomarker Analysis Results</h4>
+        <div style="display:flex;flex-direction:column;gap:14px;">
+          <div>
+            <div style="display:flex;justify-content:space-between;font-size:0.82rem;color:var(--text-secondary);margin-bottom:6px;"><span>Oncology Biomarkers</span><span style="color:var(--primary);">94.8%</span></div>
+            <div style="height:6px;background:var(--border);border-radius:3px;overflow:hidden;"><div style="height:100%;width:94.8%;background:var(--gradient-primary);border-radius:3px;"></div></div>
+          </div>
+          <div>
+            <div style="display:flex;justify-content:space-between;font-size:0.82rem;color:var(--text-secondary);margin-bottom:6px;"><span>Genetic Variant Detection</span><span style="color:var(--secondary-light);">99.2%</span></div>
+            <div style="height:6px;background:var(--border);border-radius:3px;overflow:hidden;"><div style="height:100%;width:99.2%;background:linear-gradient(135deg,#7c3aed,#a78bfa);border-radius:3px;"></div></div>
+          </div>
+          <div>
+            <div style="display:flex;justify-content:space-between;font-size:0.82rem;color:var(--text-secondary);margin-bottom:6px;"><span>Protein Binding Affinity</span><span style="color:var(--accent);">91.3%</span></div>
+            <div style="height:6px;background:var(--border);border-radius:3px;overflow:hidden;"><div style="height:100%;width:91.3%;background:linear-gradient(135deg,#06b6d4,#0ea5e9);border-radius:3px;"></div></div>
+          </div>
+          <div>
+            <div style="display:flex;justify-content:space-between;font-size:0.82rem;color:var(--text-secondary);margin-bottom:6px;"><span>Metabolite Profiling</span><span style="color:var(--accent2);">87.6%</span></div>
+            <div style="height:6px;background:var(--border);border-radius:3px;overflow:hidden;"><div style="height:100%;width:87.6%;background:linear-gradient(135deg,#f59e0b,#fbbf24);border-radius:3px;"></div></div>
+          </div>
+          <div>
+            <div style="display:flex;justify-content:space-between;font-size:0.82rem;color:var(--text-secondary);margin-bottom:6px;"><span>Microbiome Analysis</span><span style="color:#22c55e;">96.1%</span></div>
+            <div style="height:6px;background:var(--border);border-radius:3px;overflow:hidden;"><div style="height:100%;width:96.1%;background:linear-gradient(135deg,#22c55e,#4ade80);border-radius:3px;"></div></div>
+          </div>
+        </div>
+        <div style="margin-top:24px;padding:16px;background:var(--bg-glass2);border:1px solid var(--border);border-radius:var(--radius-sm);text-align:center;">
+          <div style="font-size:0.8rem;color:var(--text-muted);margin-bottom:4px;">Overall Platform Accuracy</div>
+          <div style="font-size:2.5rem;font-weight:800;font-family:var(--font-heading);background:var(--gradient-primary);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">97.8%</div>
+          <div style="font-size:0.8rem;color:#22c55e;">↑ Industry-leading precision</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- APPLICATION AREAS -->
+<section class="section" style="background:var(--bg-card);border-top:1px solid var(--border);border-bottom:1px solid var(--border);">
+  <div class="container">
+    <div class="text-center reveal">
+      <div class="section-tag">Applications</div>
+      <h2 class="section-title">Biotechnology Across <span>Every Field</span></h2>
+    </div>
+    <div class="grid-4" style="margin-top:48px;">
+      <div class="card reveal" style="text-align:center;">
+        <div style="font-size:2.5rem;margin-bottom:14px;">🔬</div>
+        <h3 class="card-title">Molecular Biology</h3>
+        <p class="card-text">PCR, gel electrophoresis, cloning, and recombinant protein expression automation for academic and industrial labs.</p>
+      </div>
+      <div class="card reveal reveal-delay-1" style="text-align:center;">
+        <div style="font-size:2.5rem;margin-bottom:14px;">🧬</div>
+        <h3 class="card-title">Genomic Medicine</h3>
+        <p class="card-text">Pharmacogenomics, rare disease diagnosis, prenatal screening, and personalised oncology treatment planning.</p>
+      </div>
+      <div class="card reveal reveal-delay-2" style="text-align:center;">
+        <div style="font-size:2.5rem;margin-bottom:14px;">🌾</div>
+        <h3 class="card-title">Agricultural Biotech</h3>
+        <p class="card-text">GM crop development, plant pathogen detection, soil microbiome analysis, and precision fermentation for biofuels.</p>
+      </div>
+      <div class="card reveal reveal-delay-3" style="text-align:center;">
+        <div style="font-size:2.5rem;margin-bottom:14px;">🏭</div>
+        <h3 class="card-title">Industrial Bioprocessing</h3>
+        <p class="card-text">Enzyme engineering, bioplastic production, bioremediation, and white biotechnology for sustainable manufacturing.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- NEWSLETTER -->
+<section class="section">
+  <div class="container">
+    <div class="cta-banner reveal">
+      <div class="section-tag" style="margin:0 auto 20px;">Research Updates</div>
+      <h2 class="section-title">Stay Current in <span>Biotechnology</span></h2>
+      <p class="section-subtitle" style="margin:0 auto 36px;">Genomics breakthroughs, CRISPR advances, drug discovery tools — delivered to your inbox weekly.</p>
+      <form style="display:flex;gap:12px;max-width:480px;margin:0 auto;flex-wrap:wrap;" onsubmit="event.preventDefault();this.querySelector('input').value='';this.querySelector('button').textContent='Subscribed ✓';">
+        <input type="email" placeholder="Enter your email" required
+          style="flex:1;min-width:220px;padding:13px 18px;background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius-pill);color:var(--text-primary);font-size:0.9rem;outline:none;" />
+        <button type="submit" class="btn btn-primary">Subscribe</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container-wide">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand">⬡ Stackly</div>
+        <p class="footer-desc">Pioneering biotechnology research and development at the intersection of AI, genomics, and molecular medicine.</p>
+        <p style="font-size:0.82rem;color:var(--text-muted);margin-bottom:16px;">📍 Stackly Salem, India</p>
+        <div class="footer-socials">
+          <div class="footer-social-btn" title="Twitter">𝕏</div>
+          <div class="footer-social-btn" title="LinkedIn">in</div>
+          <div class="footer-social-btn" title="GitHub">⌥</div>
+          <div class="footer-social-btn" title="YouTube">▶</div>
+        </div>
+      </div>
+      <div>
+        <div class="footer-col-title">Biotech</div>
+        <div class="footer-links">
+          <a href="devices.html">Lab Instruments</a>
+          <a href="services.html">Research Services</a>
+          <a href="innovations.html">R&amp;D Innovations</a>
+          <a href="home2.html">Platform V2</a>
+        </div>
+      </div>
+      <div>
+        <div class="footer-col-title">Company</div>
+        <div class="footer-links">
+          <a href="about.html">About Us</a>
+          <a href="contact.html">Contact</a>
+          <a href="dashboard.html">Dashboard</a>
+          <a href="login.html">Portal Login</a>
+        </div>
+      </div>
+      <div>
+        <div class="footer-col-title">Legal</div>
+        <div class="footer-links">
+          <a href="404.html">Privacy Policy</a>
+          <a href="404.html">Terms of Service</a>
+          <a href="404.html">GLP Compliance</a>
+          <a href="404.html">NABH Certification</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2025 Stackly Biotechnology. All rights reserved.</span>
+      <span>Built with ♥ in Salem, India</span>
+    </div>
+  </div>
+</footer>
+
+<button id="scrollTop" aria-label="Scroll to top">↑</button>
+<script src="js/main.js"></script>
+<script>
+  // Dropdown toggle on click for touch devices
+  const dropdownTrigger = document.getElementById('dropdownTrigger');
+  const navDropdown = document.getElementById('navDropdown');
+  if (dropdownTrigger) {
+    dropdownTrigger.addEventListener('click', (e) => {
+      e.stopPropagation();
+      navDropdown.classList.toggle('open');
+    });
+    document.addEventListener('click', () => navDropdown.classList.remove('open'));
+  }
+</script>
+</body>
+</html>
