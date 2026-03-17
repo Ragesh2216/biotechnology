@@ -31,16 +31,9 @@
     <a href="innovations.html">Innovations</a>
     <a href="contact.html">Contact</a>
     <!-- Access Dropdown -->
-    <div class="nav-dropdown" id="navDropdown">
-      <button class="nav-dropdown-trigger" id="dropdownTrigger">
-        Access Portal <span class="caret">▼</span>
-      </button>
-      <div class="nav-dropdown-menu">
-        <a href="dashboard.html"><span class="menu-icon">📊</span> Dashboard</a>
-        <div class="menu-divider"></div>
-        <a href="login.html?type=admission"><span class="menu-icon">🏥</span> Admission</a>
-        <a href="login.html?type=customer"><span class="menu-icon">👤</span> Customer</a>
-      </div>
+    <div style="display:flex; gap:10px; margin-left:14px;">
+      <a href="login.html?tab=login" class="btn btn-ghost btn-sm" style="padding:7px 16px; border-radius:var(--radius-pill);">Login</a>
+      <a href="login.html?tab=register" class="btn btn-primary btn-sm" style="padding:7px 16px; border-radius:var(--radius-pill);">Register</a>
     </div>
   </div>
   <button class="navbar-mobile-toggle" id="mobileToggle" aria-label="Toggle menu">
@@ -56,10 +49,9 @@
   <a href="services.html">Services</a>
   <a href="innovations.html">Innovations</a>
   <a href="contact.html">Contact</a>
-  <div class="mobile-access-section">
-    <div class="mobile-access-label">Login</div>
-    <a href="login.html?type=admin">🛡️ Admin</a>
-    <a href="login.html?type=customer">👤 Customer</a>
+  <div class="mobile-access-section" style="display:flex; flex-direction:column; gap:10px; padding:15px; border-top:1px solid rgba(255,255,255,0.05); margin-top:10px;">
+    <a href="login.html?tab=login" class="btn btn-outline" style="width:100%; justify-content:center;">Login</a>
+    <a href="login.html?tab=register" class="btn btn-primary" style="width:100%; justify-content:center;">Register</a>
   </div>
 </div>
 
@@ -86,53 +78,8 @@
     </div>
   </div>
 
-  <!-- Hero visual -->
-  <div class="hero-visual" style="background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius-lg);padding:24px;box-shadow:var(--shadow-glow);">
-    <div style="display:flex;align-items:center;gap:10px;margin-bottom:20px;">
-      <div style="width:10px;height:10px;border-radius:50%;background:#ef4444;"></div>
-      <div style="width:10px;height:10px;border-radius:50%;background:var(--accent2);"></div>
-      <div style="width:10px;height:10px;border-radius:50%;background:#22c55e;"></div>
-      <span style="font-size:0.8rem;color:var(--text-muted);margin-left:8px;">Biotech Lab Monitor</span>
-    </div>
-    <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:16px;">
-      <div style="background:var(--bg-glass2);border:1px solid var(--border);border-radius:var(--radius-sm);padding:14px;">
-        <div style="font-size:0.72rem;color:var(--text-muted);text-transform:uppercase;letter-spacing:.08em;margin-bottom:6px;">DNA Purity (A260/280)</div>
-        <div style="font-size:1.6rem;font-weight:700;color:var(--primary);font-family:var(--font-heading);">1.89</div>
-        <div style="font-size:0.72rem;color:#22c55e;">✓ High Purity</div>
-      </div>
-      <div style="background:var(--bg-glass2);border:1px solid var(--border);border-radius:var(--radius-sm);padding:14px;">
-        <div style="font-size:0.72rem;color:var(--text-muted);text-transform:uppercase;letter-spacing:.08em;margin-bottom:6px;">Cell Viability</div>
-        <div style="font-size:1.6rem;font-weight:700;color:var(--secondary-light);font-family:var(--font-heading);">96.4<span style="font-size:.9rem;color:var(--text-muted)"> %</span></div>
-        <div style="font-size:0.72rem;color:#22c55e;">✓ Excellent</div>
-      </div>
-      <div style="background:var(--bg-glass2);border:1px solid var(--border);border-radius:var(--radius-sm);padding:14px;">
-        <div style="font-size:0.72rem;color:var(--text-muted);text-transform:uppercase;letter-spacing:.08em;margin-bottom:6px;">PCR Efficiency</div>
-        <div style="font-size:1.6rem;font-weight:700;color:var(--accent2);font-family:var(--font-heading);">99.2<span style="font-size:.9rem;color:var(--text-muted)"> %</span></div>
-        <div style="font-size:0.72rem;color:#22c55e;">✓ Optimal</div>
-      </div>
-      <div style="background:var(--bg-glass2);border:1px solid var(--border);border-radius:var(--radius-sm);padding:14px;">
-        <div style="font-size:0.72rem;color:var(--text-muted);text-transform:uppercase;letter-spacing:.08em;margin-bottom:6px;">Culture pH</div>
-        <div style="font-size:1.6rem;font-weight:700;color:var(--accent);font-family:var(--font-heading);">7.42</div>
-        <div style="font-size:0.72rem;color:#22c55e;">✓ Physiological</div>
-      </div>
-    </div>
-    <div style="height:80px;background:var(--bg-glass2);border:1px solid var(--border);border-radius:var(--radius-sm);padding:10px;display:flex;align-items:flex-end;gap:4px;overflow:hidden;">
-      <div style="font-size:0.7rem;color:var(--text-muted);align-self:flex-start;white-space:nowrap;">Gene Expression ●</div>
-      <div style="flex:1;display:flex;align-items:flex-end;gap:3px;height:48px;">
-        <div style="flex:1;height:20%;background:var(--primary);opacity:.5;border-radius:2px 2px 0 0;"></div>
-        <div style="flex:1;height:45%;background:var(--primary);opacity:.6;border-radius:2px 2px 0 0;"></div>
-        <div style="flex:1;height:100%;background:var(--primary);border-radius:2px 2px 0 0;"></div>
-        <div style="flex:1;height:30%;background:var(--primary);opacity:.6;border-radius:2px 2px 0 0;"></div>
-        <div style="flex:1;height:15%;background:var(--primary);opacity:.4;border-radius:2px 2px 0 0;"></div>
-        <div style="flex:1;height:55%;background:var(--primary);opacity:.7;border-radius:2px 2px 0 0;"></div>
-        <div style="flex:1;height:80%;background:var(--primary);opacity:.9;border-radius:2px 2px 0 0;"></div>
-        <div style="flex:1;height:35%;background:var(--primary);opacity:.6;border-radius:2px 2px 0 0;"></div>
-        <div style="flex:1;height:20%;background:var(--primary);opacity:.5;border-radius:2px 2px 0 0;"></div>
-        <div style="flex:1;height:60%;background:var(--primary);opacity:.8;border-radius:2px 2px 0 0;"></div>
-        <div style="flex:1;height:100%;background:var(--primary);border-radius:2px 2px 0 0;"></div>
-        <div style="flex:1;height:25%;background:var(--primary);opacity:.5;border-radius:2px 2px 0 0;"></div>
-      </div>
-    </div>
+  <div class="hero-visual" style="border-radius:var(--radius-lg);overflow:hidden;box-shadow:var(--shadow-glow);border:1px solid var(--border);">
+    <img src="home_hero.webp" alt="Biotech Lab Equipment" style="width:100%;height:auto;object-fit:cover;display:block;">
   </div>
 </section>
 
