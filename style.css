@@ -132,13 +132,9 @@ input, textarea, select { font-family: inherit; }
   white-space: nowrap;
 }
 .navbar-brand img {
-  height: 64px !important;
-  width: 64px !important;
-  object-fit: cover !important;
-  border-radius: 50% !important;
-  margin-top: -12px;
-  margin-bottom: -12px;
-  box-shadow: 0 0 18px rgba(0,212,170,0.4);
+  height: 40px !important;
+  width: auto !important;
+  object-fit: contain !important;
 }
 .navbar-brand .brand-icon {
   width: 36px; height: 36px;
@@ -151,19 +147,15 @@ input, textarea, select { font-family: inherit; }
 }
 
 .preloader-logo {
-  height: 100px !important;
-  width: 100px !important;
-  object-fit: cover !important;
-  border-radius: 50% !important;
-  box-shadow: 0 0 40px rgba(0,212,170,0.5);
+  height: 64px !important;
+  width: auto !important;
+  object-fit: contain !important;
 }
 
 .footer-brand {
-  height: 80px !important;
-  width: 80px !important;
-  object-fit: cover !important;
-  border-radius: 50% !important;
-  box-shadow: 0 0 25px rgba(0,212,170,0.4);
+  height: 48px !important;
+  width: auto !important;
+  object-fit: contain !important;
   margin-bottom: 22px !important;
 }
 
